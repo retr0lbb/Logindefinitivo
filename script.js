@@ -1,7 +1,10 @@
-console.log("ping")
 
+function calcular(){
+    const peso = parseFloat(document.querySelector("#weight").value)
+    const altura = parseFloat(document.querySelector("#height").value)
+    imc = peso / (altura*altura)
 
+    imcf = imc.toFixed(2)
 
-function calcularImc(peso,altura){
-    return(console.log("imc = ",peso/(altura * altura)))
+    alert(imcf)
 }
